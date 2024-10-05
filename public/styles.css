@@ -295,9 +295,10 @@ body {
     }
     .header-icon {
         position: absolute;
-        padding-right: 26px;
-        padding-top: 60px;
+        margin-right: 26px;
+        margin-top: 60px;
         right: 10px;
+        box-sizing: border-box;
     }
     .dropdown-name {
         position: absolute;
