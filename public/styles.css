@@ -79,15 +79,26 @@ footer {
     background-color: rgb(245, 242, 242, 0.92);
 }
 .header-icon {
-    height: 75px;
-    border: none; 
+    border: none;
+    border-radius: 21px;
+    height: 48px;
+    width: 48px;
+    transform: translateX(17px);
+}
+#displayimage {
+    position: absolute;
+    right: -12px;
+    top: 50%;
+    transform: translateY(-36px);
+    pointer-events: none;
 }
 #displayimage2 {
-    height: 63px;
-    border: none;
-    box-sizing: border-box;
-    margin-top: 3px;
-    padding-left: 5px;
+    position: absolute;
+    height: 65px;
+    right: -6px;
+    top: 50%;
+    transform: translateY(-34px);
+    pointer-events: none;
 }
 .header-flex-container a:hover {
     text-decoration: underline;
@@ -249,11 +260,6 @@ body {
 .dropdown {
     display: none;
 }
-.select {
-    cursor: pointer;
-    background: none;
-    border: none;
-}
 .menu {
     flex-direction: column;
     background-color: var(--base-color);
@@ -297,6 +303,33 @@ body {
 }
 /* mobile screen width positionings */
 @media screen and (max-width: 780px) {
+    .header-icon {
+        border: none;
+        height: 47px;
+        position: relative;
+        width: 22px;
+        right: -5px;
+        transform: translateX(-7px);
+        border-radius: 21px;
+    }
+    #displayimage {
+        position: absolute;
+        right: -12px;
+        top: 50%;
+        transform: translateY(-36px);
+        pointer-events: none;
+    }
+    #displayimage2 {
+        position: absolute;
+        height: 65px;
+        border: none;
+        margin-top: 3px;
+        padding-left: 4px;
+        right: -8px;
+        top: 50%;
+        transform: translateY(-36px);
+        pointer-events: none;
+    }
     .header-flex-container {
         display: none;
     }
@@ -312,12 +345,19 @@ body {
     .lightmode .dropdown {
         background-color: rgb(245, 242, 242, 0.92);
     }
+    #dropdown-button {
+        pointer-events: visiblePainted;
+    }
     .select {
+        cursor: pointer;
+        background: none;
         position: absolute;
         right: 68px;
+        pointer-events: none;
     }
     .lightmode .select {
-        bottom: 3px;
+        bottom: 2px;
+        right: 66px;
     }
     .header-icon {
         position: absolute;
