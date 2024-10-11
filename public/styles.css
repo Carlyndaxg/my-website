@@ -80,7 +80,14 @@ footer {
 }
 .header-icon {
     height: 75px;
+    border: none; 
+}
+#displayimage2 {
+    height: 63px;
     border: none;
+    box-sizing: border-box;
+    margin-top: 3px;
+    padding-left: 5px;
 }
 .header-flex-container a:hover {
     text-decoration: underline;
@@ -175,7 +182,7 @@ footer {
     --footer-text-color: #a8a8a8;
     --header-color: rgb(245, 242, 242, 0.92);
 }
-#theme-switch, #mobile-theme-switch {
+#theme-switch, #mobile-theme-switch{
     height: 50px;
     width: 50px;
     background: transparent;
@@ -310,7 +317,7 @@ body {
         right: 68px;
     }
     .lightmode .select {
-        top: 0;
+        bottom: 3px;
     }
     .header-icon {
         position: absolute;
