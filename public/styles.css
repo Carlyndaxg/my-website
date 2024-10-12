@@ -40,6 +40,9 @@ header, #largefont {
 footer {
     font-size: 9px;
 }
+#projects-fontsize {
+    font-size: 12px;
+}
 /* contact me bullet point color */
 li::marker {
     color: var(--body-text-color);
@@ -436,4 +439,35 @@ body {
     .lightmode .dropdown {
         background-color: rgb(245, 242, 242, 0.92);
     }
+}
+.project1-header {
+    width: 350px;
+    margin-left: 0;
+    text-align: center;
+    margin-bottom: -2px;
+}
+.project1-header a:visited, a:link, a:active {
+    text-decoration: none;
+    color: var(--body-text-color);
+}
+.project1-header a:hover {
+    text-decoration: underline;
+}
+#projects-fontsize {
+    display: flex;
+    margin-top: -3px;
+}
+#project1-image {
+    margin-left: -15px;
+    position: absolute;
+    top: -9.5px;
+    left: -2.6px;
+}
+.project1-image-container{
+    border: 2.5px solid var(--body-text-color);
+    width: 349.3px;
+    height: 212.4px;
+    transform: translateY(-5px);
+    transform: translateX(1px);
+    border-radius: 23px;
 }
