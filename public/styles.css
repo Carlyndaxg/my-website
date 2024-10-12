@@ -416,6 +416,14 @@ body {
         padding-top: 76px;
         right: 55px;
     }
+    .project1-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #project1-content {
+        margin-top: -20px;
+    }
 }
 /* contact page cat positioning with even smaller browser screen width, 
    decreases smoothly as width decreases past 640px */
