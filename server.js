@@ -14,3 +14,12 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
+
+// change page urls
+app.get('/Homepage', function(req, res) {
+    res.sendFile(__dirname + '/index.html');
+  });
+
+app.get('Projects', function(req, res) {
+    res.sendFile(__dirname + 'projects.html');
+});

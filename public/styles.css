@@ -174,6 +174,9 @@ footer {
     --body-text-color: white;
     --footer-text-color: #5a5a5a;
     --header-color: rgb(34, 34, 34, 0.92);
+    --form-font-color: #222222; 
+    --form-border-color: #afafaf; 
+    --form-background: white;
 }
 body {
     background-color: var(--base-color);
@@ -195,6 +198,9 @@ footer {
     --body-text-color: #222222;
     --footer-text-color: #a8a8a8;
     --header-color: rgb(245, 242, 242, 0.92);
+    --form-font-color: #222222;
+    --form-border-color: #afafaf; 
+    --form-background: white; 
 }
 #theme-switch, #mobile-theme-switch{
     height: 50px;
@@ -478,4 +484,58 @@ body {
     transform: translateY(-5px);
     transform: translateX(1px);
     border-radius: 23px;
+}
+
+/* contact page form */
+.contact-container {
+    height: 500px; 
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contact-left-title {
+    color: var(--body-text-color);
+}
+.contact-inputs {
+    width: 500px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    border-radius: 21px;
+    background-color: var(--form-background)
+}
+.contact-left textarea {
+    height: 150px;
+    padding-top: 15px;
+    border-radius: 21px;
+}
+.contact-inputs:focus {
+    border: 3px solid var(--form-border-color);
+}
+.contact-inputs::placeholder {
+    color: var(--form-font-color);
+}
+.contact-left button {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-family: RoundedRegular;
+    background-color: white;
+    border: none;
+    border-radius: 21px;
+    gap: 10px;
+    color: var(--form-font-color);
+    cursor: pointer;
+}
+@media screen and (max-width: 550px) {
+    .contact-inputs {
+        width: calc(100vw - 50px);
+    }
 }
