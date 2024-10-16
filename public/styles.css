@@ -258,7 +258,6 @@ body {
     padding-left: calc(22.92vw + (330px - 22.92vw));
     padding-right: calc(22.92vw + (330px - 22.92vw));
 }
-
 @media (max-width: 1440px) {
     body {
         padding-left: calc(330px - ( (1440px - 100vw) / 2 ));
@@ -508,7 +507,7 @@ body {
     outline: none;
     padding-left: 25px;
     border-radius: 21px;
-    background-color: var(--form-background)
+    background-color: var(--form-background);
 }
 .contact-left textarea {
     height: 150px;
@@ -537,5 +536,13 @@ body {
 @media screen and (max-width: 550px) {
     .contact-inputs {
         width: calc(100vw - 50px);
+    }
+}
+
+/* screen width greater than 1440px */
+@media screen and (min-width: 1440px) {
+    body {
+        padding-left: calc(330px + ((100vw - 1440px) / 2));
+        padding-right: calc(330px + ((100vw - 1440px) / 2));
     }
 }
