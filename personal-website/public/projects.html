@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Carlynda Gao - Projects </title>
+    <link rel="stylesheet" href="styles.css"> <!-- link to css file -->
+    <script type="module" src="display.js" defer></script>
+    <script type="module" src="dropdown.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-flex-container">  <!-- desktop menu -->
+            <div>
+                <span id="largesize"><a href="index.html" title="Homepage" style="color: var(--body-text-color)"> Carlynda Gao &nbsp; </a></span>
+            </div>
+            <div>
+                <a href="projects.html" title="Projects" style="color: var(--body-text-color)" id="smallerheader"> Projects &nbsp; ·</a>
+            </div>
+            <div>
+                <a href="about.html" title="About Me" style="color: var(--body-text-color)" id="smallerheader"> About &nbsp; ·</a>
+            </div>
+            <div>
+                <a href="CarlyndaGao-Resume.pdf" title="Resume" target="_blank" style="color: var(--body-text-color)" id="smallerheader"> Resume &nbsp; ·</a> <!-- needs fixing -->
+            </div>
+            <div>
+                <a href="contact.html" title="Contact Me" style="color: var(--body-text-color)" id="smallerheader"> Contact </a>
+            </div>
+            <div class="header-icon">
+                <button id="theme-switch">
+                    <img src="light-mode-icon.png" height="70" title="Display Mode" alt="Change the display mode" id="displayimage"></a>
+                    <img src="dark-mode-icon.png" height="70" title="Display Mode" alt="Change the display mode" id="displayimage2"></a>
+                </button>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="select" style="background: transparent; border: none;" id="dropdown-switch">
+                <img src="dropdown.png" height="55" title="Dropdown Menu" alt="Dropdown menu"></a>
+                <img src="dropdown-lightmode.png" height="55" title="Dropdown Menu" alt="Dropdown menu"></a>
+            </button>
+            <div>
+                <span id="largesize"><a href="index.html" title="Homepage" style="color: var(--body-text-color)"  class="dropdown-name"> Carlynda Gao &nbsp; </a></span>
+            </div>
+            <ul class="menu">
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="CarlyndaGao-Resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="header-icon">
+                <button id="mobile-theme-switch">
+                    <img src="light-mode-icon.png" height="70" title="Display Mode" alt="Change the display mode" id="displayimage">
+                    <img src="dark-mode-icon.png" height="70" title="Display Mode" alt="Change the display mode" id="displayimage2">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="contact-main">
+        <span id="largestsize"><p id="largefont" style="color: var(--body-text-color); padding-top: 10px;"> Projects </p></span>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Carlynda Gao</p>
+    </footer>
+
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@v0.163.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@v0.163.0/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" src="main.js" defer></script>
+</body>
+
+</html>

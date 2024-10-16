@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Carlynda Gao - About </title>
+    <link rel="stylesheet" href="styles.css"> <!-- link to css file -->
+    <script type="module" src="display.js" defer></script>
+    <script type="module" src="dropdown.js" defer></script>
+</head>
+<body id="about-entire-body"> <!-- can also separate css styles with semicolon, or utilize div tag-->
+    <header>
+        <div class="header-flex-container">  <!-- desktop menu -->
+            <div>
+                <span id="largesize"><a href="index.html" title="Homepage" style="color: var(--body-text-color)"> Carlynda Gao &nbsp; </a></span>
+            </div>
+            <div>
+                <a href="projects.html" title="Projects" style="color: var(--body-text-color)" id="smallerheader"> Projects &nbsp; ·</a>
+            </div>
+            <div>
+                <a href="about.html" title="About Me" style="color: var(--body-text-color)" id="smallerheader"> About &nbsp; ·</a>
+            </div>
+            <div>
+                <a href="CarlyndaGao-Resume.pdf" title="Resume" target="_blank" style="color: var(--body-text-color)" id="smallerheader"> Resume &nbsp; ·</a> <!-- needs fixing -->
+            </div>
+            <div>
+                <a href="contact.html" title="Contact Me" style="color: var(--body-text-color)" id="smallerheader"> Contact </a>
+            </div>
+            <div class="header-icon">
+                <button id="theme-switch">
+                    <img src="light-mode-icon.png" height="70" title="Display Mode" alt="Change the display mode" id="displayimage"></a>
+                    <img src="dark-mode-icon.png" height="70" title="Display Mode" alt="Change the display mode" id="displayimage2"></a>
+                </button>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="select" style="background: transparent; border: none;" id="dropdown-switch">
+                <img src="dropdown.png" height="55" title="Dropdown Menu" alt="Dropdown menu"></a>
+                <img src="dropdown-lightmode.png" height="55" title="Dropdown Menu" alt="Dropdown menu"></a>
+            </button>
+            <div>
+                <span id="largesize"><a href="index.html" title="Homepage" style="color: var(--body-text-color)"  class="dropdown-name"> Carlynda Gao &nbsp; </a></span>
+            </div>
+            <ul class="menu">
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="CarlyndaGao-Resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="header-icon">
+                <button id="mobile-theme-switch">
+                    <img src="light-mode-icon.png" height="70" title="Display Mode" alt="Change the display mode" id="displayimage">
+                    <img src="dark-mode-icon.png" height="70" title="Display Mode" alt="Change the display mode" id="displayimage2">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="about-main">
+        <span id="image-switch">
+        <img src="headshot1.png" height="170px" title="Personal headshot" alt="This is an image of me" class="headshot-image">
+        <img src="headshot1-lightmode.png" height="150" title="Personal headshot" alt="This is an image of me" class="headshot-image" id="light-headshot">
+        </span>
+        <div id="about-image-container">
+            <img src="Harry1.png" height="200" title="My cat, Harry!" alt="This is an image of my cat, Harry" id="about-cat"> <!-- height and width are in pixels, scale proportionally w/ e/o but can be changed individually. alt is for screen reader-->
+        </div>
+        <div id="about-text-container">
+            <span id="largestsize"><span id="largefont" style="color: var(--body-text-color);"> About Me </span></span>
+            <br>
+            <br>
+            <br>
+            <span id="roundbold" style="color: var(--body-text-color);"> Hello! </span>
+            <br>
+            <br>
+            <span id="smallsize"><span id="roundregular" style="color: var(--body-text-color);"> I'm Carlynda Gao, an undergraduate student at the University of California, Berkeley originally from San Jose, California. Some of my many interests include going on runs and hikes, snowboarding, swimming, reading, writing, cooking and baking, taking photos, drawing, listening to music, and spending time with my friends, family, and my cat Harry! I also love going to the beach, exploring nature, traveling, and being around bodies of water. I enjoy going to Lake Tahoe in the winter and summer, visiting my sister in New York, and visiting my extended family in China when possible. </span>
+            <br>
+            <br>
+            <span id="roundregular" style="color: var(--body-text-color);"> In high school I was involved in research, competitive clubs such as DECA and Mock Trial, a part-time job at a boba shop, and volunteering at various non-profit organizations such as environmental restoration groups and animal shelters. Fun fact: I adopted my cat Harry from one of the animal shelters I volunteered at. </span>
+            <br>
+            <br>
+            <span id="roundregular" style="color: var(--body-text-color);"> As a student at UC Berkeley, I'm studying computer science, (pure) mathematics, and political economy. I'm involved in research in the Department of Electrical Engineering and Computer Sciences, the Chinese Student Association, and the Berkeley Chinese Alumni International Association. Educationally I'm interested in art & design, marine biology, economics from a historical perspective, the intersection of computer science and mathematics, the intersection of physics and mathematics, and pure mathematical topics such as complex and differential geometry, topology, abstract linear algebra, and other concepts that involve visualization. I love a good challenge and I enjoy problem solving, especially when it comes to logic problems, puzzles, and game theory. I also love building things and I value continual learning, so I hope to explore a career in software engineering and quantitative trading, research, or development. </span></span>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Carlynda Gao</p>
+    </footer>
+
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@v0.163.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@v0.163.0/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" src="main.js" defer></script>
+</body>
+</html>
