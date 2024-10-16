@@ -499,6 +499,7 @@ body {
 }
 .contact-left-title {
     color: var(--body-text-color);
+    margin-bottom: -20px;
 }
 .contact-inputs {
     width: 500px;
