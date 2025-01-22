@@ -134,6 +134,9 @@ footer {
 #about-text-container {
     margin-top: -160px;
 }
+.lightmode #about-image-container {
+    margin-top: 2px;
+}
 .lightmode #about-text-container {
     margin-top: -160px
 }
@@ -141,12 +144,12 @@ footer {
 .headshot-image {
     position: relative;
     margin-top: -15px;
-    margin-left: 590px;
+    margin-left: 595px;
     z-index: -1;
 }
 #light-headshot {
-    margin-top: -10px;
-    margin-left: 607px;
+    margin-top: -7px;
+    margin-left: 612.5px;
 }
 /* contact page image line up with text top */
 #contact-cat {
@@ -397,6 +400,14 @@ body {
         padding-top: 60px;
         right: -25px;
     }
+    .headshot-image {
+        position: absolute;
+        right: 29px;
+    }
+    #light-headshot {
+        position: absolute;
+        margin-right: -33px;
+    }
     #about-cat {
         padding-top: 233px;
     }
@@ -406,7 +417,7 @@ body {
         right: 17px;
     }
     .lightmode #about-cat {
-        padding-top: 200px;
+        padding-top: 198px;
     }
     /* projects page positioning with browser screen width <= 780px */
     #contact-main {
