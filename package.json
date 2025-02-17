@@ -1,0 +1,36 @@
+{
+  "name": "my-website",
+  "version": "1.0.0",
+  "description": "personal website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Carlyndaxg/my-website.git"
+  },
+  "keywords": [
+    "website",
+    "html",
+    "personal",
+    "css",
+    "javascript",
+    "three.js",
+    "express.js",
+    "node.js",
+    "vercel"
+  ],
+  "author": "Carlynda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Carlyndaxg/my-website/issues"
+  },
+  "homepage": "https://github.com/Carlyndaxg/my-website#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "node": "^23.8.0",
+    "three": "^0.173.0"
+  }
+}
