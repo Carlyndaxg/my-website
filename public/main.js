@@ -1,3 +1,8 @@
+// guard to prevent duplicates
+// if (window.MODEL_LOADED) return;
+// window.MODEL_LOADED = true;
+console.log('main.js loaded');
+
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
