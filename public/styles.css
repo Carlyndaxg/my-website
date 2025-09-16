@@ -438,9 +438,6 @@ body {
         align-items: center;
         position: static;
     }
-    #project2-content {
-        margin-top: -20px;
-    }
     .project1-container {
         display: flex;
         flex-direction: column;
@@ -458,6 +455,15 @@ body {
     }
     #project0-content {
         margin-top: -20px;
+    }
+    .project3-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: static;   
+    }
+    #project3-content {
+        margin-top: -15px; 
     }
 }
 /* contact page cat positioning with even smaller browser screen width, 
@@ -572,6 +578,30 @@ body {
     transform: translateX(1px);
     border-radius: 23px;
 }
+.project3-header a:hover {
+    text-decoration: underline;
+}
+.project3-header a:visited, a:link, a:active {
+    text-decoration: none;
+    color: var(--body-text-color);
+}
+.project3-image-container {
+    border: 2.5px solid var(--body-text-color);
+    width: 349.3px;
+    height: 212.4px;
+    transform: translateY(-5px);
+    transform: translateX(1px);
+    border-radius: 23px;
+}
+#project3-image {
+    margin-left: -15px;
+    position: absolute;
+    top: -20.5px;
+    left: -54.55px;
+    transform: translateX(38.5px);
+    margin-top: -1px;
+}
+
 
 /* contact page form */
 .contact-container {
@@ -637,12 +667,29 @@ body {
 }
 
 @media screen and (min-width: 781px) {
+    .project0-container {
+        position: relative;
+        transform: translateX(388px); /* right side */
+        top: -46px;
+    }
     #project1 {
+        position: relative;
+        transform: translateX(0);
+        top: 365px;
+    }
+    .project3-container {
+        position: absolute;
+        transform: translateX(0px); 
+        top: 180px;
+    }
+    .project3-header {
+        width: 350px;
+        text-align: center;
+        margin-bottom: -2px;
+    }
+    .project2-container {
         position: absolute;
         transform: translateX(388px);
-        top: 155px;
-    }
-    .project0-header {
-        padding-top: 20px;
+        top: 180px;
     }
 }
