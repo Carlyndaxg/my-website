@@ -92,6 +92,8 @@ scene.add(backdirectionalLight);
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);  // soft white light
 scene.add(ambientLight);
 
+leftdirectionalLight.shadow.bias = -0.0001;
+
 /*
 // function to load the GLTF model based on browser screen width BUGGY DO NOT USE
 function loadModel(isMobile) {
@@ -144,10 +146,12 @@ loader.load('scene.gltf', (gltf) => {
 
     mesh.traverse((child) => {
         if (child.isMesh) {
+            console.log('Mesh:', child.name, 'material:', child.material?.name ?? child.material?.type, 'transparent:', child.material?.transparent);
             child.castShadow = true;
             child.receiveShadow = true;
         }
-    });
+    })
+
     mesh.position.set(0, -1.5, -0.5);
     mesh.rotation.y = Math.PI;
     mesh.scale.set(5, 5, 5);
